@@ -21,7 +21,7 @@ message.set_content(body)
 
 context = ssl.create_default_context()
 
-#When you run the script in the terminal you will be asked to provide the password for the sender email.
+# When you run the script in the terminal you will be asked to provide the password for the sender email.
 print("Sending Email...")
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login(sender_email, password)
